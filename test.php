@@ -60,11 +60,11 @@ function taskThree()
     // We loop through the xml object to see if the DeclarationList Declaration ["Command"] is set to default
     foreach ($xml->DeclarationList as $declaration) {
         if ($declaration->Declaration["Command"] == "DEFAULT") {
-            echo '<br/> Declaration command is Default';
+            echo '<br/> - 1';
         };
         // Here we check if the siteID is = 'DUB' and if it is we return -2
         if ($declaration->Declaration->DeclarationHeader->SiteID == "DUB") {
-            echo '<br/>Site ID is DUB';
+            echo '<br/>-2';
         };
     }
     // Here we check to see if the XML document is valid if so return 0
